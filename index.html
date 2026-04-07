@@ -3,22 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aide à Domicile Courbevoie Asnières Bois-Colombes | Âge d'Or Services – 01 41 88 06 84</title>
-<meta name="description" content="Aide à domicile à Courbevoie, Asnières-sur-Seine, Bois-Colombes, La Garenne-Colombes. Devis gratuit. Réponse immédiate. Appelez le 01 41 88 06 84.">
+<title>Aide à Domicile Courbevoie Asnières Bois-Colombes | Âge d'Or Services – 01 41 88 06 83</title>
+<meta name="description" content="Aide à domicile à Courbevoie, Asnières-sur-Seine, Bois-Colombes, La Garenne-Colombes. Devis gratuit. Réponse immédiate. Appelez le 01 41 88 06 83.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
 
-<!-- Consent Mode v2 – doit être EN PREMIER, avant GTM -->
+<!-- Consent Mode v2 – refus par défaut -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('consent', 'default', {
     'ad_storage': 'denied',
+    'analytics_storage': 'denied',
     'ad_user_data': 'denied',
     'ad_personalization': 'denied',
-    'analytics_storage': 'denied',
-    'functionality_storage': 'granted',
-    'security_storage': 'granted',
     'wait_for_update': 500
   });
 </script>
@@ -33,12 +31,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- Dexem Call Tracking -->
 <script type="text/javascript" src="https://cdn.dexem.net/tags/5bcb9e37-d007-48f9-9ad6-3e3f2abd9aca/dexem.js"></script>
-<!-- End Dexem Call Tracking -->
 
 <!-- Variable téléphone globale -->
 <script>
-  const PHONE_NUMBER = "+33141880684";
-  const PHONE_DISPLAY = "01 41 88 06 84";
+  const PHONE_NUMBER = "+33141880683";
+  const PHONE_DISPLAY = "01 41 88 06 83";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
   function callClick(label) {
     gtag('event', 'click_call', {'event_category': 'contact', 'event_label': label});
     return true;
@@ -444,6 +443,7 @@ footer .tel-footer {
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+
 <!-- ══ STICKY ══ -->
 <div class="sticky-call">
   <a data-phone href="#" onclick="return callClick('sticky')">
@@ -686,10 +686,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
   <p>
-    <a data-phone href="#" class="tel-footer" onclick="return callClick('footer')">📞 <span class="phone-num">01 41 88 06 84</span></a><br>
+    <a data-phone href="#" class="tel-footer" onclick="return callClick('footer')">📞 <span class="phone-num">01 41 88 06 83</span></a><br>
     📍 293-295 boulevard Saint-Denis, 92400 Courbevoie<br>
     🕘 Lun–Ven : 9h–12h / 14h–18h<br>
-    ✉️ <a href="/cdn-cgi/l/email-protection#d5b6baa0a7b7b0a3babcb095b4b2b0b1baa7a6b0a7a3bcb6b0a6fbb6bab8"><span class="__cf_email__" data-cfemail="d8bbb7adaababdaeb7b1bd98b9bfbdbcb7aaabbdaaaeb1bbbdabf6bbb7b5">[email&#160;protected]</span></a><br><br>
+    ✉️ <a href="mailto:courbevoie@agedorservices.com">courbevoie@agedorservices.com</a><br><br>
     <span style="font-size:.7rem;opacity:.4;">
       SIRET : 94274180200014 · N° TVA : FR07942741802<br>
       <a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Politique de confidentialité</a> · <a href="cgv.html">CGV</a><br>
@@ -726,8 +726,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-/* ── Bandeau cookies CNIL ── */
+<script>
+// ── Consent Mode v2 – déjà initialisé dans <head>
+
 function setCookie(n,v,d){ 
   var e=new Date(); e.setTime(e.getTime()+d*864e5);
   document.cookie=n+'='+encodeURIComponent(v)+';expires='+e.toUTCString()+';path=/;SameSite=Lax';
@@ -755,4 +756,11 @@ function refuseCookies(){
   setCookie('aos_consent',JSON.stringify({a:false,d:false}),395);
   applyConsent(false,false); hideBanner();
 }
-document.addEventListener('DOMContentLoaded',fu
+document.addEventListener('DOMContentLoaded',function(){
+  var saved=getCookie('aos_consent');
+  if(saved){ try{ var p=JSON.parse(saved); applyConsent(p.a,p.d); }catch(e){} }
+  else{ setTimeout(function(){ document.getElementById('cookie-banner').style.display='block'; },1200); }
+});
+</script>
+</body>
+</html>
