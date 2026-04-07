@@ -8,6 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
 
+<!-- Dexem Call Tracking – chargé en premier, indépendant du consentement -->
+<script type="text/javascript" src="https://cdn.dexem.net/tags/5bcb9e37-d007-48f9-9ad6-3e3f2abd9aca/dexem.js"></script>
+
 <!-- Consent Mode v2 – refus par défaut -->
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -29,15 +32,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5P57JTZT');</script>
 <!-- End Google Tag Manager -->
 
-<!-- Dexem Call Tracking -->
-<script type="text/javascript" src="https://cdn.dexem.net/tags/5bcb9e37-d007-48f9-9ad6-3e3f2abd9aca/dexem.js"></script>
-
 <!-- Variable téléphone globale -->
 <script>
   const PHONE_NUMBER = "+33141880683";
   const PHONE_DISPLAY = "01 41 88 06 83";
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
   function callClick(label) {
     gtag('event', 'click_call', {'event_category': 'contact', 'event_label': label});
     return true;
